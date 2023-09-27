@@ -38,7 +38,7 @@
                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                   <a href="auth-recoverpw.html" class="text-primary float-right">Forgot Password?</a>
+                                   <a href="{{route('password.index')}}" class="text-primary float-right">Forgot Password?</a>
                                 </div>
                              </div>
                              <div class="d-flex justify-content-between align-items-center">
