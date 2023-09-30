@@ -8,7 +8,10 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\AccountingController;
+
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ProjectController;
+
 
 
 
@@ -44,5 +47,9 @@ Route::get('/user-profile',[UserProfileController::class,'index'])->name('user-p
 
 Route::get('/accounting',[AccountingController::class,'index'])->name('accounting');
 
+
 Route::get('/employee', [EmployeeController::class,'index'])->name('employee');
+
+Route::get('/project',[ProjectController::class,'index'])->name('project');
+
 
