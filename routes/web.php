@@ -8,6 +8,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\AccountingController;
+use App\Http\Controllers\EmployeeController;
 
 
 
@@ -42,3 +43,6 @@ Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard')
 Route::get('/user-profile',[UserProfileController::class,'index'])->name('user-profile');
 
 Route::get('/accounting',[AccountingController::class,'index'])->name('accounting');
+
+Route::get('/employee', [EmployeeController::class,'index'])->name('employee');
+
