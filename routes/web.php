@@ -11,6 +11,7 @@ use App\Http\Controllers\AccountingController;
 
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\RoleManagerController;
 
 
 
@@ -51,5 +52,5 @@ Route::get('/accounting',[AccountingController::class,'index'])->name('accountin
 Route::get('/employee', [EmployeeController::class,'index'])->name('employee');
 
 Route::get('/project',[ProjectController::class,'index'])->name('project');
-
+Route::get('/role-manager',[RoleManagerController::class,'index'])->name('role-manager');
 

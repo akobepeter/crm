@@ -1,14 +1,16 @@
 @extends('layout.app')
-@section('title','Employee')
+@section('title','RoleManager')
 @section('content')
 
+
+<!-- Wrapper Start -->
 <div class="wrapper">
     <div class="iq-sidebar  sidebar-default  ">
         <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
             <a href="{{route('dashboard')}}" class="header-logo">
                 <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
                 <img src="../assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
-                <span>Zigmawave</span>
+                <span>ZigmaWave</span>
             </a>
             <div class="side-menu-bt-sidebar-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -16,13 +18,12 @@
                 </svg>
             </div>
         </div>
-
         <div class="data-scrollbar" data-scroll="1">
             <nav class="iq-sidebar-menu">
                 <ul id="iq-sidebar-toggle" class="side-menu">
 
+                    <li class="sidebar-layout">
 
-                    <li class=" sidebar-layout">
                         <a href="{{route('dashboard')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,22 +34,34 @@
                         </a>
                     </li>
 
+
                     <li class="active sidebar-layout">
+
                         <a href="" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                                 </svg>
-
-                            </i><span class="ml-2">Employee</span>
+                            </i>
+                            <span class="ml-2">Role Manager</span>
                         </a>
                     </li>
 
 
+
+
+
+
+                </ul>
             </nav>
             <div class="pt-5 pb-5"></div>
         </div>
     </div>
+
+
+
+
+
 
 
     <div class="iq-top-navbar">
@@ -89,11 +102,16 @@
                                                             <div class="avatar-img avatar-danger avatar-20">
                                                                 <span>
                                                                     <svg class="icon line" width="30" height="30" id="cart-alt1" stroke="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                                        <path d="M3,3H5.32a1,1,0,0,1,.93.63L10,13,8.72,15.55A1,1,0,0,0,9.62,17H19" style="fill: none;stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
-                                                                        <polyline points="10 13 18.2 13 21 6" style="fill: none;stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline>
-                                                                        <line x1="20.8" y1="6" x2="7.2" y2="6" style="fill: none;stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line>
-                                                                        <circle cx="10.5" cy="20.5" r="0.5" style="fill: none;stroke-miterlimit: 10; stroke-width: 2;"></circle>
-                                                                        <circle cx="16.5" cy="20.5" r="0.5" style="fill: none;stroke-miterlimit: 10; stroke-width: 2;"></circle>
+                                                                        <path d="M3,3H5.32a1,1,0,0,1,.93.63L10,13,8.72,15.55A1,1,0,0,0,9.62,17H19" style="fill: none;stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                                                                        </path>
+                                                                        <polyline points="10 13 18.2 13 21 6" style="fill: none;stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                                                                        </polyline>
+                                                                        <line x1="20.8" y1="6" x2="7.2" y2="6" style="fill: none;stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                                                                        </line>
+                                                                        <circle cx="10.5" cy="20.5" r="0.5" style="fill: none;stroke-miterlimit: 10; stroke-width: 2;">
+                                                                        </circle>
+                                                                        <circle cx="16.5" cy="20.5" r="0.5" style="fill: none;stroke-miterlimit: 10; stroke-width: 2;">
+                                                                        </circle>
                                                                     </svg>
                                                                 </span>
                                                             </div>
@@ -101,7 +119,8 @@
                                                         <div class="list-style-detail ml-2 mr-2">
                                                             <h6 class="font-weight-bold">Your order is placed</h6>
                                                             <p class="m-0">
-                                                                <small class="text-secondary">If several languages coalesce</small>
+                                                                <small class="text-secondary">If several languages
+                                                                    coalesce</small>
                                                             </p>
                                                             <p class="m-0">
                                                                 <small class="text-secondary">
@@ -123,7 +142,8 @@
                                                         <div class="list-style-detail ml-2 mr-2">
                                                             <h6 class="font-weight-bold">New message form cate</h6>
                                                             <p class="m-0">
-                                                                <small class="text-secondary">You have 3 unreded messages</small>
+                                                                <small class="text-secondary">You have 3 unreded
+                                                                    messages</small>
                                                             </p>
                                                             <p class="m-0">
                                                                 <small class="text-secondary">
@@ -208,7 +228,8 @@
                                                         <div class="list-style-detail ml-2 mr-2">
                                                             <h6 class="font-weight-bold">Your item is shipped</h6>
                                                             <p class="m-0">
-                                                                <small class="text-secondary">You got new order of goods</small>
+                                                                <small class="text-secondary">You got new order of
+                                                                    goods</small>
                                                             </p>
                                                             <p class="m-0">
                                                                 <small class="text-secondary">
@@ -223,7 +244,8 @@
                                             </ul>
                                         </div>
                                         <div class="card-footer text-muted p-3">
-                                            <p class="mb-0 text-primary text-center font-weight-bold">Show all notifications</p>
+                                            <p class="mb-0 text-primary text-center font-weight-bold">Show all
+                                                notifications</p>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +280,7 @@
                                         <svg class="svg-icon mr-0 text-secondary" id="h-01-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
-                                        <a href="{{route('user-profile')}}">My Profile</a>
+                                        <a href="../app/user-profile.html">My Profile</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-02-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -297,209 +319,87 @@
         <div class="container-fluid">
             <div class="row">
 
-
-
-
                 <div class="col-sm-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <div class="header-title">
-                                <h4 class="card-title">Employee</h4>
+                                <h4 class="card-title">Role Manager</h4>
                             </div>
-                            <div class="header-action">
-                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target=".bd-new_employee-modal-lg">New Employee</button>
-                            </div>
+
+                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target=".bd-new_role-modal">Create Role</button>
+                            <!-- <div class="header-action">
+                                    <i data-toggle="collapse" data-target="#datatable-1" aria-expanded="false">
+                                        <svg width="20" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                    </i>
+                                </div> -->
                         </div>
 
 
-                        <!-- VIEW INFORMATION MODAL -->
-                        <div class="modal fade bd-view_employee-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
+                        <!-- NEW ROLE MODAL -->
+                        <div class="modal fade bd-new_role-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Employee Information</h5>
+                                        <h5 class="modal-title">New Role</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="iq-avatars d-flex flex-wrap align-items-center">
-                                            <div class="iq-avatar">
-                                                <img class="avatar-130 rounded" src="../assets/images/user/1.jpg" alt="#" data-original-title="" title="">
+                                        <form>
+
+                                            <div class="col">
+                                                <label for="">Role Name</label>
+                                                <input type="text" class="form-control form-group" placeholder="Position">
                                             </div>
+                                            <!-- <div class="col">
+                                                <label for="">Salary</label>
+                                                <input type="number" class="form-control form-group" placeholder="Amount">
+                                            </div> -->
 
-                                        </div>
-
-
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">FullName:</th>
-                                                    <td>Mark Otto</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Username:</th>
-                                                    <td>MarkOtto11</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Email:</th>
-                                                    <td>MarkOtto@yahoo.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Role:</th>
-                                                    <td>Developer</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Gender:</th>
-                                                    <td>Male</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Status:</th>
-                                                    <td> <span class="badge bg-success">active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">D.O.B:</th>
-                                                    <td>01-Oct-1960</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Phone Number:</th>
-                                                    <td>0801 234 5678</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Joined Date:</th>
-                                                    <td>01-May-1980</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        </form>
                                     </div>
-
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-
                         <div class="card-body">
-                            <div class="collapse" id="datatable-1">
-
-                            </div>
 
                             <div class="table-responsive">
-                                <span class="table-add float-right mb-3 mr-2">
-
-                                    <div class="modal fade bd-new_employee-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">New Employee</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="First Name">
-                                                            </div>
-                                                            <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Last Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Username">
-                                                            </div>
-                                                            <div class="col">
-                                                                <input type="email" class="form-control form-group" placeholder="Email">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <input type="number" class="form-control form-group" placeholder="Phone">
-                                                            </div>
-                                                            <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Address">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <div class="form-group">
-                                                                    <select class="form-control mb-3">
-                                                                        <option selected="">Gender</option>
-                                                                        <option value="1">Male</option>
-                                                                        <option value="2">Female</option>
-                                                                        <option value="3">Other</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="form-group">
-                                                                    <select class="form-control mb-3">
-                                                                        <option selected="">Position</option>
-                                                                        <option value="1">Developer</option>
-                                                                        <option value="2">Designer</option>
-                                                                        <option value="3">Product Manager</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- <div class="row">
-                                                            <div class="col">
-                                                                <input type="password" class="form-control form-group" placeholder="Password">
-                                                            </div>
-                                                            <div class="col">
-                                                                <input type="password" class="form-control form-group" placeholder="Comfirm Password">
-                                                            </div>
-                                                        </div> -->
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </span>
-
-
                                 <table id="datatable-1" class="table data-table table-striped table-bordered">
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Name</th>
                                             <th>Position</th>
-                                            <th>Email</th>
-                                            <th>Start date</th>
+                                            <th>Users</th>
+                                            <th>Date</th>
                                             <!-- <th>Salary</th> -->
                                             <th>Status</th>
-                                            <th class="text-right">Action</th>
+                                            <th>Action</th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th>1</th>
-                                            <td>Tiger Nixon</td>
                                             <td>System Architect</td>
-                                            <td>Edinburgh@gmail.com</td>
+                                            <td>2</td>
                                             <td>2011/04/25</td>
                                             <!-- <td>$320,800</td> -->
                                             <td>
                                                 <span class="badge bg-success">active</span>
                                             </td>
                                             <td class="btn-group">
-                                                <a href="#" data-toggle="modal" data-target=".bd-view_employee-modal-lg" class="btn btn-primary  p-2 ">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info p-2">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_role-modal" class="btn btn-info">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -507,7 +407,7 @@
                                                     </i>
                                                 </a>
 
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger p-2">
+                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
@@ -516,136 +416,18 @@
                                                 </a>
                                             </td>
                                         </tr>
-
-
-
-
-                                        <!-- EDIT MODAL -->
-                                        <div class="modal fade bd-edit_employee-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog modal-lg">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title">Edit Employee</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="First Name">
-                                                                </div>
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Last Name">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Username">
-                                                                </div>
-                                                                <div class="col">
-                                                                    <input type="email" class="form-control form-group" placeholder="Email">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <input type="number" class="form-control form-group" placeholder="Phone">
-                                                                </div>
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Address">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <div class="form-group">
-                                                                        <select class="form-control mb-3">
-                                                                            <option selected="">Gender</option>
-                                                                            <option value="1">Male</option>
-                                                                            <option value="2">Female</option>
-                                                                            <option value="3">Other</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <div class="form-group">
-                                                                        <select class="form-control mb-3">
-                                                                            <option selected="">Position</option>
-                                                                            <option value="1">Developer</option>
-                                                                            <option value="2">Designer</option>
-                                                                            <option value="3">Product Manager</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- <div class="row">
-                                                                <div class="col">
-                                                                    <input type="password" class="form-control form-group" placeholder="Password">
-                                                                </div>
-                                                                <div class="col">
-                                                                    <input type="password" class="form-control form-group" placeholder="Comfirm Password">
-                                                                </div>
-                                                            </div> -->
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <!-- DELETE MODAL -->
-
-                                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Delete Employee</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Are you sure to delete this employee?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Delete</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
                                         <tr>
                                             <th>2</th>
-                                            <td>Garrett Winters</td>
                                             <td>Accountant</td>
-                                            <td>Tokyo@gmail.com</td>
+                                            <td>4</td>
                                             <td>2011/07/25</td>
                                             <!-- <td>$170,750</td> -->
                                             <td>
-                                                <span class="badge bg-primary">pending</span>
+                                                <span class="badge bg-success">active</span>
                                             </td>
                                             <td class="btn-group">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-view_employee-modal-lg" class="btn btn-primary  p-2 ">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info p-2">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_role-modal" class="btn btn-info">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -653,7 +435,7 @@
                                                     </i>
                                                 </a>
 
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger p-2">
+                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
@@ -664,26 +446,16 @@
                                         </tr>
                                         <tr>
                                             <th>3</th>
-                                            <td>Ashton Cox</td>
                                             <td>Junior Technical Author</td>
-                                            <td>San Francisco@gmail.com</td>
+                                            <td>2</td>
                                             <td>2009/01/12</td>
                                             <!-- <td>$86,000</td> -->
                                             <td>
-                                                <span class="badge bg-info">on leave</span>
+                                                <span class="badge bg-success">active</span>
                                             </td>
                                             <td class="btn-group">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-view_employee-modal-lg" class="btn btn-primary  p-2 ">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info p-2">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_role-modal" class="btn btn-info">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -691,7 +463,7 @@
                                                     </i>
                                                 </a>
 
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger p-2">
+                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
@@ -700,28 +472,19 @@
                                                 </a>
                                             </td>
                                         </tr>
+
                                         <tr>
                                             <th>4</th>
-                                            <td>Cedric Kelly</td>
-                                            <td>Senior Javascript Developer</td>
-                                            <td>Edinburgh@yahoo.com</td>
-                                            <td>2012/03/29</td>
-                                            <!-- <td>$433,060</td> -->
+                                            <td>Marketing Designer</td>
+                                            <td>5</td>
+                                            <td>2012/11/27</td>
+                                            <!-- <td>$198,500</td> -->
                                             <td>
-                                                <span class="badge bg-danger">inactive</span>
+                                                <span class="badge bg-success">active</span>
                                             </td>
                                             <td class="btn-group">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-view_employee-modal-lg" class="btn btn-primary  p-2 ">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info p-2">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_role-modal" class="btn btn-info">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -729,7 +492,7 @@
                                                     </i>
                                                 </a>
 
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger p-2">
+                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
@@ -740,26 +503,16 @@
                                         </tr>
                                         <tr>
                                             <th>5</th>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo@yahoo.com</td>
-                                            <!-- <td>2008/11/28</td> -->
-                                            <td>$162,700</td>
+                                            <td>Chief Financial Officer (CFO)</td>
+                                            <td>1</td>
+                                            <td>2010/06/09</td>
+                                            <!-- <td>$725,000</td> -->
                                             <td>
-                                                <span class="badge bg-success">active</span>
+                                                <span class="badge bg-danger">inactive</span>
                                             </td>
                                             <td class="btn-group">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-view_employee-modal-lg" class="btn btn-primary  p-2 ">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info p-2">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_role-modal" class="btn btn-info">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -767,7 +520,7 @@
                                                     </i>
                                                 </a>
 
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger p-2">
+                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
@@ -776,121 +529,108 @@
                                                 </a>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td>Brielle Williamson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>New York@yahoo.com</td>
-                                            <td>2012/12/02</td>
-                                            <!-- <td>$372,000</td> -->
-                                            <td>
-                                                <span class="badge bg-primary">pending</span>
-                                            </td>
-                                            <td class="btn-group">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-view_employee-modal-lg" class="btn btn-primary  p-2 ">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info p-2">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger p-2">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>7</th>
-                                            <td>Herrod Chandler</td>
-                                            <td>Sales Assistant</td>
-                                            <td>San Francisco@gmail.com</td>
-                                            <td>2012/08/06</td>
-                                            <!-- <td>$137,500</td> -->
-                                            <td>
-                                                <span class="badge bg-info">on leave</span>
-                                            </td>
-                                            <td class="btn-group">
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-view_employee-modal-lg" class="btn btn-primary  p-3 ">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info p-2">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger p-2">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </td>
-                                        </tr>
                                     </tbody>
 
                                 </table>
+
+                                <!-- DELETE MODAL -->
+                                <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Delete Role</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Are you sure to delete this ROLE?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- EDIT ROLE MODAL -->
+                                <div class="modal fade bd-edit_role-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Edit Role</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+
+                                                    <div class="col">
+                                                        <label for="">Role Name</label>
+                                                        <input type="text" class="form-control form-group" placeholder="Position">
+                                                    </div>
+                                                    <!-- <div class="col">
+                                                        <label for="">Salary</label>
+                                                        <input type="number" class="form-control form-group" placeholder="Amount">
+                                                    </div> -->
+                                                    <div class="col">
+                                                        <label for="">Status</label>
+                                                        <div class="form-group">
+                                                            <select class="form-control mb-3">
+                                                                <!-- <option selected="">Status</option> -->
+                                                                <option value="1">Active</option>
+                                                                <option value="2">Inactive</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Page end  -->
             </div>
         </div>
     </div>
-    <!-- Wrapper End-->
-    <footer class="iq-footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 text-right">
-                    <span class="mr-1">
-                        Copyright
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>© <a href="#" class="">Zigmawave</a>
-                        All Rights Reserved.
-                    </span>
-                </div>
+</div>
+<!-- Wrapper End-->
+
+
+
+<footer class="iq-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-right">
+                <span class="mr-1">
+                    Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>© <a href="#" class="">Zigmawave</a>
+                    All Rights Reserved.
+                </span>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 
-
-
-
-
-    @endsection
+@endsection
