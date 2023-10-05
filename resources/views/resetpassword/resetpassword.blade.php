@@ -11,10 +11,10 @@
                <div class="col-md-5">
                   <div class="card p-5">
                      <div class="card-body">
-                        <div class="auth-logo">
+                        <!-- <div class="auth-logo">
                            <img src="../assets/images/logo.png " class="img-fluid  rounded-normal  darkmode-logo" alt="logo">
                            <img src="../assets/images/logo-dark.png" class="img-fluid rounded-normal light-logo" alt="logo">
-                        </div>
+                        </div> -->
                         <h3 class="mb-3 text-center">Reset Password</h3>
                         <p class="text-center small text-secondary mb-3">You can reset your password here</p>
                         <form>
