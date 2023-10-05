@@ -12,9 +12,9 @@
                  <div class="col-md-5">
                     <div class="card">
                        <div class="card-body">
-                          <div class="auth-logo">
+                          <!-- <div class="auth-logo">
                              <img src="../assets/images/logo.png" class="img-fluid rounded-normal" alt="logo">
-                          </div>
+                          </div> -->
                           <h2 class="mb-2 text-center">Sign In</h2>
                           <p class="text-center">To Keep connected with us please login with your personal info.</p>
                           <form>

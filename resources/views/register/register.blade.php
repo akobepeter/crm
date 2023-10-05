@@ -15,12 +15,12 @@
                <div class="col-md-5">
                   <div class="card">
                      <div class="card-body">
-                        <div class="auth-logo">
+                        <!-- <div class="auth-logo">
                            <img src="../assets/images/logo.png " class="img-fluid  rounded-normal  darkmode-logo" alt="logo">
                            <img src="../assets/images/logo-dark.png" class="img-fluid rounded-normal light-logo" alt="logo">
-                        </div>
+                        </div> -->
                         <h3 class="mb-3 font-weight-bold text-center">Register</h3>
-                        <p class="text-center text-secondary mb-4">Choose your social media to create account</p>
+                        <p class="text-center text-dark mb-4">Choose your social media to create account</p>
                         <div class="social-btn d-flex justify-content-around align-items-center mb-4">
                             <button class="btn btn-outline-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="88.428 12.828 107.543 207.085">
@@ -48,13 +48,13 @@
                            <div class="row">
                               <div class="col-lg-12">
                                  <div class="form-group">
-                                    <label class="text-secondary">Email</label>
+                                    <label class="text-dark ">Email</label>
                                     <input class="form-control" type="email" placeholder="Enter Email">
                                  </div>
                               </div>
                               <div class="col-lg-12 mt-2">
                                  <div class="form-group">
-                                    <label class="text-secondary">Password</label>
+                                    <label class="text-dark ">Password</label>
                                     <input class="form-control" type="password" placeholder="Enter Password">
                                  </div>
                               </div>
