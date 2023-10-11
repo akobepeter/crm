@@ -1,12 +1,12 @@
 @extends('layout.app')
 
-@section("title","Project")
+@section("title","leave")
 
 @section('content')
 <div class="wrapper">
     <div class="iq-sidebar  sidebar-default  ">
         <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
-        <a href="{{route('dashboard')}}" class="header-logo">
+             <a href="{{route('dashboard')}}" class="header-logo">
                 <!-- <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
                 <img src="../assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo"> -->
                 <span>Zigmawave</span>            
@@ -33,12 +33,12 @@
                     </li>
 
                     <li class=" sidebar-layout">
-                        <a href="{{route('project')}}" class="svg-icon">
+                        <a href="{{route('leave')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                                     </svg>
-                            </i><span class="ml-2">Projects</span>
+                            </i><span class="ml-2">Leave</span>
                         </a>
                     </li>
 
@@ -221,7 +221,7 @@
                                     </form>
                                 </div>
                             </li>
-                        
+                            
                             <li class="nav-item nav-icon dropdown">
                                 <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     <img src="../assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
@@ -278,13 +278,12 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <div class="header-title">
-                                <h4 class="card-title">Projects</h4>
+                                <h4 class="card-title">Leave</h4>
                             </div>
                             <div class="header-action">
-                                <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target=".bd-new_employee-modal-lg">New Project</button>
+                                <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target=".bd-new_employee-modal-lg">Add Leave</button>
                             </div>
                         </div>
-                        
                         <div class="card-body">
                             <div class="collapse" id="datatable-1">
 
@@ -297,7 +296,7 @@
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title text-dark ">New Project</h5>
+                                                    <h5 class="modal-title text-black ">Add Leave</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -306,10 +305,16 @@
                                                     <form>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Project Name">
+                                                                <input type="text" class="form-control form-group" placeholder="Name">
                                                             </div>
                                                             <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Project Type">
+                                                                <input type="text" class="form-control form-group" placeholder="Department">
+                                                            </div>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control form-group" placeholder="Leave Days">
+                                                            </div>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control form-group" placeholder="Leave Type">
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -324,11 +329,11 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Company Name">
+                                                                <label style=" color:grey;font-size:15px;margin-left:20px" for="comment">Reasons why you are Applying for a leave</label>
+                                                                <textarea class="h-5 w-100"name="" id="" cols="10" rows="10"></textarea>
                                                             </div>
-                                                            
                                                         </div>
-                                                        
+                                            
                                                     </form>
                                                 </div>
                                                 <div class="modal-footer">
@@ -339,36 +344,77 @@
                                         </div>
                                     </div>
                                 </span>
+                                
 
+                                <!-- card starts here -->
+                                <div class="row mb-5">
+                            <div class="col-xl-3 col-md-6 ">
+                                <div class="card  bg-primary h-100 text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <div class="card-body ">Casual Leave</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-center">
+                                        <a class="small  text-white stretched-link " >7 Days</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning h-100 text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <div class="card-body">Maternity leave</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-center">
+                                        <a class="small text-white stretched-link" href="#">90 Days</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success h-100 text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <div class="card-body">Study Leave</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-center">
+                                        <a class="small text-white stretched-link" href="#">120Days</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger h-100 text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <div class="card-body">Sick Leave</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-center">
+                                        <a class="small text-white stretched-link" href="#">7 Days</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                <!-- card ends here -->
 
-                                <table id="datatable-1" class="table data-table table-striped table-bordered">
+                        <!-- Table Starts Here -->
+                        <table id="datatable-1" class="table data-table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>S/n</th>
-                                            <th>Name </th>
-                                            <th>Type</th>
-                                            <th>Company</th>
+                                            <th>Name</th>
+                                            <th>Leave Type</th>
+                                            <th>Leave Days</th>
+                                            <th>Department</th>
                                             <th>Start date</th>
-                                            <th>End date</th>
-                                            <th>Status</th>
-                                            <th class="text-right">Action</th>
+                                            <th>End Date</th>
+                                            <th class="text-right">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th>1</th>
-                                            <td>CRM </td>
-                                            <td>Software</td>
-                                            <td>Zigmawave <br> Intern</td>
+                                            <td>Miracle Happy</td>
+                                            <td>Maternity Leave </td>
+                                            <td>90 Days</td>
+                                            <td>Faculty</td>
                                             <td>2011/04/25</td>
                                             <td>2011/04/25</td>
                                             <td>
-                                                <span class="badge bg-success">active</span>
+                                                <span class="badge bg-success">Approved</span>
                                             </td>
                                             <td class="btn-group">
                                                 
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-primary">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -392,7 +438,7 @@
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
                                                     <div class="modal-header"> 
-                                                        <h5 class="modal-title text-black">Edit Project</h5>
+                                                        <h5 class="modal-title text-danger">Edit Leave</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -401,10 +447,16 @@
                                                         <form>
                                                             <div class="row">
                                                                 <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Project Name">
+                                                                    <input type="text" class="form-control form-group" placeholder=" Name">
                                                                 </div>
                                                                 <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Project Type">
+                                                                    <input type="text" class="form-control form-group" placeholder="Department">
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control form-group" placeholder="Leave Days">
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control form-group" placeholder="Leave Type">
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -416,14 +468,14 @@
                                                                 <label for="" style=" color:grey;font-size:15px;margin-left:20px" >End Date</label>
                                                                     <input type="date" class="form-control form-group" placeholder="End Date">
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Company Name">
-                                                                </div>
                                                                 
                                                             </div>
-                                                            
+                                                            <div class="row">
+                                                            <div class="col">
+                                                                <label style=" color:grey;font-size:15px;margin-left:20px" for="comment">Reasons why you are Applying for a leave</label>
+                                                                <textarea class="h-10 w-100"name="" id="" cols="20" rows="10"></textarea>
+                                                            </div>
+                                                        </div>
                                                         </form>
                                                     </div>
                                                     <div class="modal-footer">
@@ -440,13 +492,13 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Delete Project</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Delete Leave</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        Are you sure to delete this project?
+                                                        Are you sure to delete this Leave?
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -459,18 +511,18 @@
                                         
 
                                         <tr>
-                                            <th>2</th>
-                                            <td>HRM</td>
-                                            <td>Software</td>
-                                            <td>Zigmawave</td>
+                                            <td>Paul</td>
+                                            <td>Acoounting</td>
+                                            <td>Sick Leave</td>
+                                            <td>20 Days</td>
                                             <td>2011/07/25</td>
                                             <td>2011/08/22</td>
                                             <td>
-                                                <span class="badge bg-primary">completed</span>
+                                                <span class="badge bg-primary">Declined</span>
                                             </td>
                                             <td class="btn-group">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-primary">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -488,18 +540,18 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>3</th>
-                                            <td>Safire</td>
-                                            <td>Landing Page</td>
-                                            <td>Zigmawave <br>Intern</td>
-                                            <td>2009/01/12</td>
-                                            <td>2023/01/23</td>
+                                            <td>Paul</td>
+                                            <td>Acoounting</td>
+                                            <td>Sick Leave</td>
+                                            <td>20 Days</td>
+                                            <td>2011/07/25</td>
+                                            <td>2011/08/22</td>
                                             <td>
-                                                <span class="badge bg-info">on leave</span>
+                                                <span class="badge bg-info">Pending</span>
                                             </td>
                                             <td class="btn-group">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
+                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-primary">
                                                     <i class="">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -516,39 +568,13 @@
                                                 </a>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td>Website</td>
-                                            <td>Safire</td>
-                                            <td>E-commerce Web</td>
-                                            <td>2012/03/29</td>
-                                            <td>2023/09/24</td>
-                                            <td>
-                                                <span class="badge bg-danger">completed</span>
-                                            </td>
-                                            <td class="btn-group">
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                       
+                                        
                                     </tbody>
 
                                 </table>
+
+                        <!-- Table Ends Here -->
+
                             </div>
                         </div>
                     </div>
