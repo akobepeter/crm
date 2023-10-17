@@ -56,16 +56,6 @@
                             </i><span class="ml-2">Projects</span>
                         </a>
                     </li>
-
-                    <li class=" sidebar-layout">
-                        <a href="#" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                                    </svg>
-                            </i><span class="ml-2">Products</span>
-                        </a>
-                    </li>
                     <li class=" sidebar-layout">
                         <a href="{{route('employee')}}" class="svg-icon">
                             <i class="">
@@ -150,17 +140,6 @@
                             </i><span class="ml-2">Leave</span>
                         </a>
                     </li>
-
-                    <li class=" sidebar-layout">
-                        <a href="../backend/timeline.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Products</span>
-                        </a>
-                    </li>
-                   
             </nav>
             <div class="pt-5 pb-5"></div>
         </div>
@@ -339,25 +318,7 @@
                                     </form>
                                 </div>
                             </li>
-                            <li class="nav-item nav-icon dropdown">
-                                <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="../assets/images/Flag/flag001.png" class="img-fluid rounded-circle" alt="user" style="height: 30px; min-width: 30px; width: 30px;">
-                                <span class="bg-primary"></span>
-                                </a>
-                                <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                    <div class="card shadow-none m-0 border-0">
-                                        <div class=" p-0 ">
-                                            <ul class="dropdown-menu-1 list-group list-group-flush">
-                                                <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="../assets/images/Flag/flag-03.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Spanish</a></li>
-                                                <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="../assets/images/Flag/flag-04.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Italian</a></li>
-                                                <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="../assets/images/Flag/flag-02.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>French</a></li>
-                                                <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="../assets/images/Flag/flag-05.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>German</a></li>
-                                                <li class="dropdown-item-1 list-group-item  px-2"><a class="p-0" href="#"><img src="../assets/images/Flag/flag-06.png" alt="img-flaf" class="img-fluid mr-2" style="width: 15px;height: 15px;min-width: 15px;"/>Japanese</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            
                             <li class="nav-item nav-icon dropdown">
                                 <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     <img src="../assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
