@@ -281,7 +281,7 @@
                                 <h4 class="card-title">Leave</h4>
                             </div>
                             <div class="header-action">
-                                <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target=".bd-new_employee-modal-lg">Add Leave</button>
+                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target=".bd-new_employee-modal-lg">Add Leave</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -347,9 +347,9 @@
                                 
 
                                 <!-- card starts here -->
-                                <div class="row mb-5">
-                            <div class="col-xl-3 col-md-6 ">
-                                <div class="card  bg-primary h-100 text-white mb-4 d-flex align-items-center justify-content-center">
+                                <div class="row">
+                            <div class="col-xl-3 mt-3 col-md-6 ">
+                                <div class="card bg-primary h-100 text-white  d-flex align-items-center justify-content-center">
                                     <div class="card-body ">Casual Leave</div>
                                     <div class="card-footer d-flex align-items-center justify-content-center">
                                         <a class="small  text-white stretched-link " >7 Days</a>
@@ -357,8 +357,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning h-100 text-white mb-4 d-flex align-items-center justify-content-center">
+                            <div class="col-xl-3 mt-3 col-md-6">
+                                <div class="card bg-warning h-100 text-white  d-flex align-items-center justify-content-center">
                                     <div class="card-body">Maternity leave</div>
                                     <div class="card-footer d-flex align-items-center justify-content-center">
                                         <a class="small text-white stretched-link" href="#">90 Days</a>
@@ -366,8 +366,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success h-100 text-white mb-4 d-flex align-items-center justify-content-center">
+                            <div class="col-xl-3 mt-3 col-md-6 ">
+                                <div class="card bg-success  h-100 text-white mb-4 d-flex align-items-center justify-content-center">
                                     <div class="card-body">Study Leave</div>
                                     <div class="card-footer d-flex align-items-center justify-content-center">
                                         <a class="small text-white stretched-link" href="#">120Days</a>
@@ -375,7 +375,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6">
+                            <div class="col-xl-3 mt-3 col-md-6">
                                 <div class="card bg-danger h-100 text-white mb-4 d-flex align-items-center justify-content-center">
                                     <div class="card-body">Sick Leave</div>
                                     <div class="card-footer d-flex align-items-center justify-content-center">
@@ -389,15 +389,16 @@
 
                         <!-- Table Starts Here -->
                         <table id="datatable-1" class="table data-table table-striped table-bordered">
-                                    <thead>
+                                    <thead class="thead-light">
                                         <tr>
                                             <th>Name</th>
                                             <th>Leave Type</th>
                                             <th>Leave Days</th>
                                             <th>Department</th>
-                                            <th>Start date</th>
+                                            <th>Start date</ th>
                                             <th>End Date</th>
                                             <th class="text-right">Status</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
