@@ -364,7 +364,7 @@
               <h5 class="card-title">Project Report Chart</h5>
 
              
- <canvas id="myChart" style="width:100%;max-width:900px ;height:350px"></canvas>
+           <canvas id="myChart" style="width:100%;max-width:900px ;height:350px"></canvas>
 
             </div>
           </div>
@@ -454,8 +454,9 @@
             </div>
           </div>
         </div>
-              </div>
-              </section>
+       </div>
+    </section>
+
 
 
         

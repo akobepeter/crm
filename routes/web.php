@@ -13,6 +13,8 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\RoleManagerController;
 use App\Http\Controllers\LeaveController;
 use App\Http\Controllers\ReportsController;
+use App\Http\Controllers\EditUserController;
+
 
 
 
@@ -59,4 +61,6 @@ Route::get('/role-manager',[RoleManagerController::class,'index'])->name('role-m
 Route::get('/leave',[LeaveController::class,'index'])->name('leave');
 
 Route::get('/reports',[ReportsController::class,'index'])->name('reports');
+
+Route::get('/edit-user-profile',[EditUserController::class,'index'])->name('edit-user-profile');
 

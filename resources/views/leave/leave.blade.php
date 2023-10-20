@@ -238,26 +238,26 @@
                                         <svg class="svg-icon mr-0 text-secondary" id="h-02-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                         </svg>
-                                        <a href="../app/user-profile-edit.html">Edit Profile</a>
+                                        <a href="{{route('edit-user-profile')}}">Edit Profile</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-03-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
-                                        <a href="../app/user-account-setting.html">Account Settings</a>
+                                        <a href="#">Account Settings</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-04-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                         </svg>
-                                        <a href="../app/user-privacy-setting.html">Privacy Settings</a>
+                                        <a href="#">Privacy Settings</a>
                                     </li>
                                     <li class="dropdown-item  d-flex svg-icon border-top">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                         </svg>
-                                        <a href="../backend/auth-sign-in.html">Logout</a>
+                                        <a href="#">Logout</a>
                                     </li>
                                 </ul>
                             </li>
@@ -289,7 +289,7 @@
 
                             </div>
 
-                            <div class="table-responsive">
+                            
                                 <span class="table-add float-right mb-3 mr-2">
 
                                     <div class="modal fade bd-new_employee-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
@@ -305,10 +305,10 @@
                                                     <form>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Name">
+                                                                <input type="text" class="form-control form-group" name="name" placeholder="Name">
                                                             </div>
                                                             <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Department">
+                                                                <input type="text" class="form-control form-group" name="department" placeholder="Department">
                                                             </div>
                                                             <div class="col">
                                                                 <input type="text" class="form-control form-group" placeholder="Leave Days">
@@ -319,20 +319,20 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >Start Date</label>
+                                                                <label for="" class="form-group" >Start Date</label>
                                                                 <input type="date" class="form-control form-group">
                                                             </div>
                                                             <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >End Date</label>
+                                                                <label for="" class="form-group" >End Date</label>
                                                                 <input type="date" class="form-control form-group">
                                                             </div>
                                                         </div>
-                                                        <div class="row">
+                                                        
                                                             <div class="col">
-                                                                <label style=" color:grey;font-size:15px;margin-left:20px" for="comment">Reasons why you are Applying for a leave</label>
-                                                                <textarea class="h-5 w-100"name="" id="" cols="10" rows="10"></textarea>
+                                                                <label for="comment" class="form-group">Reasons why you are Applying for a leave</label>
+                                                                <textarea class="form-control"name="comment" id=""  rows="2"></textarea>
                                                             </div>
-                                                        </div>
+                                                    
                                             
                                                     </form>
                                                 </div>
@@ -348,46 +348,46 @@
 
                                 <!-- card starts here -->
                                 <div class="row">
-                            <div class="col-xl-3 mt-3 col-md-6 ">
-                                <div class="card bg-primary h-100 text-white  d-flex align-items-center justify-content-center">
-                                    <div class="card-body ">Casual Leave</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-center">
-                                        <a class="small  text-white stretched-link " >7 Days</a>
-                                        
+                                    <div class="col-xl-3 mt-3 col-md-6 ">
+                                        <div class="card bg-primary text-white  d-flex align-items-center justify-content-center">
+                                            <div class="card-body ">Casual Leave</div>
+                                            <div class="card-footer d-flex align-items-center justify-content-center">
+                                                <a class="small  text-white stretched-link " >7 Days</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 mt-3 col-md-6">
+                                        <div class="card bg-warning text-white  d-flex align-items-center justify-content-center">
+                                            <div class="card-body">Maternity leave</div>
+                                            <div class="card-footer d-flex align-items-center justify-content-center">
+                                                <a class="small text-white stretched-link" href="#">90 Days</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 mt-3 col-md-6 ">
+                                        <div class="card bg-success  text-white d-flex align-items-center justify-content-center">
+                                            <div class="card-body">Study Leave</div>
+                                            <div class="card-footer d-flex align-items-center justify-content-center">
+                                                <a class="small text-white stretched-link" href="#">120Days</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 mt-3 col-md-6">
+                                        <div class="card bg-danger  text-white  d-flex align-items-center justify-content-center">
+                                            <div class="card-body">Sick Leave</div>
+                                            <div class="card-footer d-flex align-items-center justify-content-center">
+                                                <a class="small text-white stretched-link" href="#">7 Days</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-3 mt-3 col-md-6">
-                                <div class="card bg-warning h-100 text-white  d-flex align-items-center justify-content-center">
-                                    <div class="card-body">Maternity leave</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-center">
-                                        <a class="small text-white stretched-link" href="#">90 Days</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 mt-3 col-md-6 ">
-                                <div class="card bg-success  h-100 text-white mb-4 d-flex align-items-center justify-content-center">
-                                    <div class="card-body">Study Leave</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-center">
-                                        <a class="small text-white stretched-link" href="#">120Days</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 mt-3 col-md-6">
-                                <div class="card bg-danger h-100 text-white mb-4 d-flex align-items-center justify-content-center">
-                                    <div class="card-body">Sick Leave</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-center">
-                                        <a class="small text-white stretched-link" href="#">7 Days</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                                 <!-- card ends here -->
 
+
+                          
+
                         <!-- Table Starts Here -->
+                        <div class="table-responsive">
                         <table id="datatable-1" class="table data-table table-striped table-bordered">
                                     <thead class="thead-light">
                                         <tr>
@@ -462,21 +462,21 @@
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >Start Date</label>
+                                                                <label for="" class="form-group">Start Date</label>
                                                                     <input type="date" class="form-control form-group" placeholder="Start Date">
                                                                 </div>
                                                                 <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >End Date</label>
+                                                                <label for="" class="form-group">End Date</label>
                                                                     <input type="date" class="form-control form-group" placeholder="End Date">
                                                                 </div>
                                                                 
                                                             </div>
-                                                            <div class="row">
+                                                          
                                                             <div class="col">
-                                                                <label style=" color:grey;font-size:15px;margin-left:20px" for="comment">Reasons why you are Applying for a leave</label>
-                                                                <textarea class="h-10 w-100"name="" id="" cols="20" rows="10"></textarea>
+                                                                <label for="comment" class="form-group">Reasons why you are Applying for a leave</label>
+                                                                <textarea class="form-control"name="comment" id="" rows="2"></textarea>
                                                             </div>
-                                                        </div>
+                                                        
                                                         </form>
                                                     </div>
                                                     <div class="modal-footer">
@@ -573,6 +573,8 @@
                                     </tbody>
 
                                 </table>
+
+                            
 
                         <!-- Table Ends Here -->
 
