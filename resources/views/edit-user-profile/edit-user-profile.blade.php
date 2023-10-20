@@ -1,15 +1,14 @@
-
 @extends('layout.app')
 
-@section('title','Accounting')
+@section('title','Edit-User-Profile')
 
 @section('content')
 <div class="wrapper">
     <div class="iq-sidebar  sidebar-default  ">
         <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
              <a href="{{route('dashboard')}}" class="header-logo">
-                <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
-                <img src="../assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo">
+                {{-- <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo">
+                <img src="../assets/images/logo-dark.png" class="img-fluid rounded-normal d-none sidebar-light-img" alt="logo"> --}}
                 <span>Zigmawave</span>            
             </a>
             <div class="side-menu-bt-sidebar-1">
@@ -21,7 +20,7 @@
         <div class="data-scrollbar" data-scroll="1">
             <nav class="iq-sidebar-menu">
                 <ul id="iq-sidebar-toggle" class="side-menu">
-                    <li class="active sidebar-layout">
+                    <li class=" sidebar-layout">
                         <a href="{{route('dashboard')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -29,129 +28,13 @@
                                 </svg>
                             </i>
                             <span class="ml-2">Dashboard</span>
-                            <p class="mb-0 w-10 badge badge-pill badge-primary">6</p>
                         </a>
-                    </li>
-                    <li class="px-3 pt-3 pb-2">
-                        <span class="text-uppercase small font-weight-bold">Pages</span>
-                    </li>
-                     <li class=" sidebar-layout">
-                        <a href="{{route('user-profile')}}" class="svg-icon">
-                            <i class="">
-                                <svg class="svg-icon" id="iq-user-1-1" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">User Profile</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-layout">
-                        <a href="#app1" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
-                            <i>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                            </i>
-                            <span class="ml-2">Projects</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="../backend/pages-comingsoon.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                                </svg>
-                            </i><span class="ml-2">Employee</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="../backend/pages-maintenance.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                                </svg>
-                            </i><span class="ml-2">Maintenance</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="../backend/pages-blank-page.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                                </svg>
-                            </i><span class="ml-2">Tasks</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="../backend/pages-faq.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                                  </svg>                                  
-                            </i><span class="ml-2">Customer</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="{{route('accounting')}}" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Accounting</span>
-                        </a>
-                    </li>
-                     <li class=" sidebar-layout">
-                        <a href="../backend/timeline.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Activities</span>
-                        </a>
-                    </li>
+                    </li>             
+                </ul>
+                    
 
-                    <li class=" sidebar-layout">
-                        <a href="../backend/timeline.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Role Manager</span>
-                        </a>
-                    </li>
-
-                    <li class=" sidebar-layout">
-                        <a href="../backend/timeline.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Reports</span>
-                        </a>
-                    </li>
-
-                    <li class=" sidebar-layout">
-                        <a href="../backend/timeline.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Leave</span>
-                        </a>
-                    </li>
-
-                    <li class=" sidebar-layout">
-                        <a href="../backend/timeline.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Products</span>
-                        </a>
-                    </li>
-
-                   
+                 
+                      
             </nav>
             <div class="pt-5 pb-5"></div>
         </div>
@@ -311,6 +194,7 @@
                                     </div>
                                 </div>
                             </li>                        
+                         
                             <li class="nav-item nav-icon search-content">
                                 <a href="#" class="search-toggle rounded" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <svg class="svg-icon text-secondary" id="h-suns" height="25" width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -330,7 +214,6 @@
                                     </form>
                                 </div>
                             </li>
-               
                             <li class="nav-item nav-icon dropdown">
                                 <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     <img src="../assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
@@ -341,32 +224,32 @@
                                         <svg class="svg-icon mr-0 text-secondary" id="h-01-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
-                                        <a href="{{route('user-profile')}}">My Profile</a>
+                                        <a href="../app/user-profile.html">My Profile</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-02-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                         </svg>
-                                        <a href="{{route('edit-user-profile')}}">Edit Profile</a>
+                                        <a href="../app/user-profile-edit.html">Edit Profile</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-03-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
-                                        <a href="#">Account Settings</a>
+                                        <a href="../app/user-account-setting.html">Account Settings</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-04-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                         </svg>
-                                        <a href="#">Privacy Settings</a>
+                                        <a href="../app/user-privacy-setting.html">Privacy Settings</a>
                                     </li>
                                     <li class="dropdown-item  d-flex svg-icon border-top">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                         </svg>
-                                        <a href="#">Logout</a>
+                                        <a href="../backend/auth-sign-in.html">Logout</a>
                                     </li>
                                 </ul>
                             </li>
@@ -377,166 +260,275 @@
         </div>
     </div>
     <div class="content-page">
-<div class="container-fluid">
- <div class="row">
-    <div class="col-md-12 mb-4 mt-1">
-       <div class="d-flex flex-wrap justify-content-between align-items-center">
-           <h4 class="font-weight-bold">Overview</h4>
-           <div class="form-group mb-0 vanila-daterangepicker d-flex flex-row">
-                <div class="date-icon-set">
-                   <input type="text" name="start" class="form-control" placeholder="From Date">
-                   <span class="search-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                   </span>
-                </div>                  
-                   <span class="flex-grow-0">
-                   <span class="btn">To</span>
-                </span>
-                <div class="date-icon-set">
-                   <input type="text" name="end" class="form-control" placeholder="To Date">
-                   <span class="search-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                   </span>
-                </div>                  
-          </div>
-       </div>
-    </div>
-    <div class="col-lg-8 col-md-12">
+    <div class="container-fluid">
        <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-12">
              <div class="card">
-                <div class="card-body">
-                   <div class="d-flex align-items-center">
-                      <div class="">
-                          <p class="mb-2 text-secondary">Total Profit</p>
-                          <div class="d-flex flex-wrap justify-content-start align-items-center">
-                             <h5 class="mb-0 font-weight-bold">$95,595</h5>
-                             <p class="mb-0 ml-3 text-success font-weight-bold">+3.55%</p>
-                          </div>                            
-                      </div>
+                <div class="card-body p-0">
+                   <div class="iq-edit-list usr-edit">
+                      <ul class="iq-edit-profile d-flex nav nav-pills">
+                         <li class="col-md-3 p-0">
+                            <a class="nav-link active" data-toggle="pill" href="#personal-information">
+                            Personal Information
+                            </a>
+                         </li>
+                         <li class="col-md-3 p-0">
+                            <a class="nav-link" data-toggle="pill" href="#chang-pwd">
+                            Change Password
+                            </a>
+                         </li>
+                         <li class="col-md-3 p-0">
+                            <a class="nav-link" data-toggle="pill" href="#emailandsms">
+                            Email and SMS
+                            </a>
+                         </li>
+                         <li class="col-md-3 p-0">
+                            <a class="nav-link" data-toggle="pill" href="#manage-contact">
+                            Manage Contact
+                            </a>
+                         </li>
+                      </ul>
                    </div>
                 </div>
-             </div>   
-          </div>
-          <div class="col-md-4">
-          <div class="card">
-              <div class="card-body">
-                  <div class="d-flex align-items-center">
-                      <div class="">
-                          <p class="mb-2 text-secondary">Total Expenses</p>
-                          <div class="d-flex flex-wrap justify-content-start align-items-center">
-                             <h5 class="mb-0 font-weight-bold">$12,789</h5>
-                             <p class="mb-0 ml-3 text-success font-weight-bold">+2.67%</p>
-                          </div>                            
-                      </div>
-                  </div>
-              </div>
-          </div>   
-          </div>
-          <div class="col-md-4">
-          <div class="card">
-              <div class="card-body">
-                  <div class="d-flex align-items-center">
-                      <div class="">
-                         <p class="mb-2 text-secondary">New Users</p>
-                         <div class="d-flex flex-wrap justify-content-start align-items-center">
-                            <h5 class="mb-0 font-weight-bold">13,984</h5>
-                            <p class="mb-0 ml-3 text-danger font-weight-bold">-9.98%</p>
-                         </div>                            
-                      </div>
-                  </div>
-              </div>
-          </div>   
-          </div>
-          <div class="col-md-12">
-          <div class="card">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center flex-wrap">
-                   <h4 class="font-weight-bold">Sales Report</h4>
-                   <div class="d-flex justify-content-between align-items-center">
-                      <div><svg width="24" height="24" viewBox="0 0 24 24" fill="primary" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="3" width="18" height="18" rx="2" fill="#3378FF" />
-                            </svg>
-                         <span>Incomes</span>
-                      </div>
-                      <div class="ml-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#19b3b3" />
-                                        </svg>
-                         <span>Expenses</span>
-                      </div>
-                   </div>
-                </div>
-                 <div id="chart-apex-column-01" class="custom-chart"></div>
-              </div>
-          </div>   
-          </div>
-       </div>
-    </div>
-    <div class="col-lg-4 col-md-8">
-       <div class="card card-block card-stretch card-height">
-          <div class="card-header card-header-border d-flex justify-content-between">
-             <div class="header-title">
-                <h4 class="card-title">Top Selling Product</h4>
              </div>
           </div>
-          <div class="card-body-list">               
-             <ul class="list-style-3 mb-0">
-                <li class="p-3 list-item d-flex justify-content-start align-items-center">
-                   <div class="avatar">
-                      <img class="avatar avatar-img avatar-60 rounded" src="../assets/images/products/1.jpg" alt="1.jpg">                        
+          <div class="col-lg-12">
+             <div class="iq-edit-list-data">
+                <div class="tab-content">
+                   <div class="tab-pane fade active show" id="personal-information" role="tabpanel">
+                      <div class="card">
+                         <div class="card-header d-flex justify-content-between">
+                            <div class="header-title">
+                               <h4 class="card-title">Personal Information</h4>
+                            </div>
+                         </div>
+                         <div class="card-body">
+                            <form>
+                               <div class="form-group row align-items-center">
+                                  <div class="col-md-12">
+                                     <div class="profile-img-edit">
+                                        <div class="crm-profile-img-edit">
+                                           <img class="crm-profile-pic rounded-circle avatar-100" src="../assets/images/user/1.jpg" alt="profile-pic">
+                                           <div class="crm-p-image bg-primary">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                              </svg>
+                                              <input class="file-upload" type="file" accept="image/*">
+                                           </div>
+                                        </div>                                          
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class=" row align-items-center">
+                                  <div class="form-group col-sm-6">
+                                     <label for="fname">First Name:</label>
+                                     <input type="text" class="form-control" id="fname" value="Barry">
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label for="lname">Last Name:</label>
+                                     <input type="text" class="form-control" id="lname" value="Tech">
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label for="uname">User Name:</label>
+                                     <input type="text" class="form-control" id="uname" value="Barry@01">
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label for="cname">City:</label>
+                                     <input type="text" class="form-control" id="cname" value="Atlanta">
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label class="d-block">Gender:</label>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadio6" name="customRadio1" class="custom-control-input" checked="">
+                                        <label class="custom-control-label" for="customRadio6"> Male </label>
+                                     </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadio7" name="customRadio1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio7"> Female </label>
+                                     </div>
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label for="dob">Date Of Birth:</label>
+                                     <input  class="form-control" id="dob" value="1984-01-24">
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label>Marital Status:</label>
+                                     <select class="form-control" id="exampleFormControlSelect1">
+                                        <option selected="">Single</option>
+                                        <option>Married</option>
+                                        <option>Widowed</option>
+                                        <option>Divorced</option>
+                                        <option>Separated </option>
+                                     </select>
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label>Age:</label>
+                                     <select class="form-control" id="exampleFormControlSelect2">
+                                        <option>12-18</option>
+                                        <option>19-32</option>
+                                        <option selected="">33-45</option>
+                                        <option>46-62</option>
+                                        <option>63 > </option>
+                                     </select>
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label>Country:</label>
+                                     <select class="form-control" id="exampleFormControlSelect3">
+                                        <option>Caneda</option>
+                                        <option>Noida</option>
+                                        <option selected="">USA</option>
+                                        <option>India</option>
+                                        <option>Africa</option>
+                                     </select>
+                                  </div>
+                                  <div class="form-group col-sm-6">
+                                     <label>State:</label>
+                                     <select class="form-control" id="exampleFormControlSelect4">
+                                        <option>California</option>
+                                        <option>Florida</option>
+                                        <option selected="">Georgia</option>
+                                        <option>Connecticut</option>
+                                        <option>Louisiana</option>
+                                     </select>
+                                  </div>
+                                    <div class="form-group col-sm-12">
+                                     <label>Address:</label>
+                                     <textarea class="form-control" name="address" rows="5" style="line-height: 22px;">37 Cardinal Lane
+                                        Petersburg, VA 23803
+                                        United States of America
+                                        Zip Code: 85001
+                                     </textarea>
+                                   </div>
+                               </div>
+                               <button type="reset" class="btn btn-outline-primary mr-2">Cancel</button>
+                               <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                         </div>
+                      </div>
                    </div>
-                   <div class="list-style-detail ml-3 mr-2">
-                      <p class="mb-0">Rockerz Bluetooth Headset</p>
+                   <div class="tab-pane fade" id="chang-pwd" role="tabpanel">
+                      <div class="card">
+                         <div class="card-header d-flex justify-content-between">
+                            <div class="header-title">
+                               <h4 class="card-title">Change Password</h4>
+                            </div>
+                         </div>
+                         <div class="card-body">
+                            <form>
+                               <div class="form-group">
+                                  <label for="cpass">Current Password:</label>
+                                  <a href="javascripe:void();" class="float-right">Forgot Password</a>
+                                  <input type="Password" class="form-control" id="cpass" value="">
+                               </div>
+                               <div class="form-group">
+                                  <label for="npass">New Password:</label>
+                                  <input type="Password" class="form-control" id="npass" value="">
+                               </div>
+                               <div class="form-group">
+                                  <label for="vpass">Verify Password:</label>
+                                  <input type="Password" class="form-control" id="vpass" value="">
+                               </div>
+                               <button type="reset" class="btn btn-outline-primary mr-2">Cancel</button>
+                               <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                         </div>
+                      </div>
                    </div>
-                   <div class="list-style-action d-flex justify-content-end ml-auto">                        
-                      <h6 class="font-weight-bold">$1,056</h6>                        
+                   <div class="tab-pane fade" id="emailandsms" role="tabpanel">
+                      <div class="card">
+                         <div class="card-header d-flex justify-content-between">
+                            <div class="header-title">
+                               <h4 class="card-title">Email and SMS</h4>
+                            </div>
+                         </div>
+                         <div class="card-body">
+                            <form>
+                               <div class="form-group row align-items-center">
+                                  <label class="col-md-3" for="emailnotification">Email Notification:</label>
+                                  <div class="col-md-9 custom-control custom-switch">
+                                     <input type="checkbox" class="custom-control-input" id="emailnotification" checked="">
+                                     <label class="custom-control-label" for="emailnotification"></label>
+                                  </div>
+                               </div>
+                               <div class="form-group row align-items-center">
+                                  <label class="col-md-3" for="smsnotification">SMS Notification:</label>
+                                  <div class="col-md-9 custom-control custom-switch">
+                                     <input type="checkbox" class="custom-control-input" id="smsnotification" checked="">
+                                     <label class="custom-control-label" for="smsnotification"></label>
+                                  </div>
+                               </div>
+                               <div class="form-group row align-items-center">
+                                  <label class="col-md-3" for="npass">When To Email</label>
+                                  <div class="col-md-9">
+                                     <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="email01">
+                                        <label class="custom-control-label" for="email01">You have new notifications.</label>
+                                     </div>
+                                     <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="email02">
+                                        <label class="custom-control-label" for="email02">You're sent a direct message</label>
+                                     </div>
+                                     <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="email03" checked="">
+                                        <label class="custom-control-label" for="email03">Someone adds you as a connection</label>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="form-group row align-items-center">
+                                  <label class="col-md-3" for="npass">When To Escalate Emails</label>
+                                  <div class="col-md-9">
+                                     <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="email04">
+                                        <label class="custom-control-label" for="email04"> Upon new order.</label>
+                                     </div>
+                                     <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="email05">
+                                        <label class="custom-control-label" for="email05"> New membership approval</label>
+                                     </div>
+                                     <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="email06" checked="">
+                                        <label class="custom-control-label" for="email06"> Member registration</label>
+                                     </div>
+                                  </div>
+                               </div>
+                               <button type="reset" class="btn btn-outline-primary mr-2">Cancel</button>
+                               <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                         </div>
+                      </div>
                    </div>
-                </li>
-                <li class="p-3 list-item d-flex justify-content-start align-items-center">
-                   <div class="avatar">
-                      <img class="avatar avatar-img avatar-60 rounded" src="../assets/images/products/2.jpg" alt="2.jpg">                        
+                   <div class="tab-pane fade" id="manage-contact" role="tabpanel">
+                      <div class="card">
+                         <div class="card-header d-flex justify-content-between">
+                            <div class="header-title">
+                               <h4 class="card-title">Manage Contact</h4>
+                            </div>
+                         </div>
+                         <div class="card-body">
+                            <form>
+                               <div class="form-group">
+                                  <label for="cno">Contact Number:</label>
+                                  <input type="text" class="form-control" id="cno" value="001 2536 123 458">
+                               </div>
+                               <div class="form-group">
+                                  <label for="email">Email:</label>
+                                  <input type="text" class="form-control" id="email" value="Barryjone@demo.com">
+                               </div>
+                               <div class="form-group">
+                                  <label for="url">Url:</label>
+                                  <input type="text" class="form-control" id="url" value="https://getbootstrap.com">
+                               </div>
+                               <button type="reset" class="btn btn-outline-primary mr-2">Cancel</button>
+                               <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                         </div>
+                      </div>
                    </div>
-                   <div class="list-style-detail ml-3 mr-2">
-                      <p class="mb-0">Wifi Security Camera</p>
-                   </div>
-                   <div class="list-style-action d-flex justify-content-end ml-auto">                        
-                      <h6 class="font-weight-bold">$1,799</h6>                        
-                   </div>
-                </li>
-                <li class="p-3 list-item d-flex justify-content-start align-items-center">
-                   <div class="avatar">
-                      <img class="avatar avatar-img avatar-60 rounded" src="../assets/images/products/13.jpg" alt="3.jpg">                        
-                   </div>
-                   <div class="list-style-detail ml-3 mr-2">
-                      <p class="mb-0">Stone Bluetooth Speaker</p>
-                   </div>
-                   <div class="list-style-action d-flex justify-content-end ml-auto">                        
-                      <h6 class="font-weight-bold">$1,099</h6>                        
-                   </div>
-                </li>
-                <li class="p-3 list-item d-flex justify-content-start align-items-center">
-                   <div class="avatar">
-                      <img class="avatar avatar-img avatar-60 rounded" src="../assets/images/products/4.jpg" alt="4.jpg">                        
-                   </div>
-                   <div class="list-style-detail ml-3 mr-2">
-                      <p class="mb-0">Ryzen 5 Hexa Core 5600H</p>
-                   </div>
-                   <div class="list-style-action d-flex justify-content-end ml-auto">                        
-                      <h6 class="font-weight-bold">$9,999</h6>                        
-                   </div>
-                </li>
-             </ul>
+                </div>
+             </div>
           </div>
        </div>
-       
     </div>
- </div>
-  <!-- Page end  -->
-</div>
     </div>
   </div>
   <!-- Wrapper End-->
@@ -545,14 +537,14 @@
           <div class="row">
               <div class="col-lg-6">
                   <ul class="list-inline mb-0">
-                      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                      <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                      <li class="list-inline-item"><a href="../backend/privacy-policy.html">Privacy Policy</a></li>
+                      <li class="list-inline-item"><a href="../backend/terms-of-service.html">Terms of Use</a></li>
                   </ul>
               </div>
               <div class="col-lg-6 text-right">
                   <span class="mr-1">
                       Copyright
-                      <script>document.write(new Date().getFullYear())</script>© <a href="#" class="">Zigmawave</a>
+                      <script>document.write(new Date().getFullYear())</script>© <a href="#" class="">Datum</a>
                       All Rights Reserved.
                   </span>
               </div>
@@ -560,4 +552,3 @@
       </div>
   </footer> 
 @endsection
-

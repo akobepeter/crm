@@ -1,8 +1,10 @@
 @extends('layout.app')
 
-@section("title","Project")
-
+@section("title","reports")
 @section('content')
+
+
+
 <div class="wrapper">
     <div class="iq-sidebar  sidebar-default  ">
         <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
@@ -33,12 +35,12 @@
                     </li>
 
                     <li class=" sidebar-layout">
-                        <a href="{{route('project')}}" class="svg-icon">
+                        <a href="{{route('reports')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                                     </svg>
-                            </i><span class="ml-2">Projects</span>
+                            </i><span class="ml-2">reports</span>
                         </a>
                     </li>
 
@@ -221,7 +223,8 @@
                                     </form>
                                 </div>
                             </li>
-                        
+                           
+                               
                             <li class="nav-item nav-icon dropdown">
                                 <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     <img src="../assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
@@ -238,26 +241,26 @@
                                         <svg class="svg-icon mr-0 text-secondary" id="h-02-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                         </svg>
-                                        <a href="{{route('edit-user-profile')}}">Edit Profile</a>
+                                        <a href="../app/user-profile-edit.html">Edit Profile</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-03-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
-                                        <a href="#">Account Settings</a>
+                                        <a href="../app/user-account-setting.html">Account Settings</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-04-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                         </svg>
-                                        <a href="#">Privacy Settings</a>
+                                        <a href="../app/user-privacy-setting.html">Privacy Settings</a>
                                     </li>
                                     <li class="dropdown-item  d-flex svg-icon border-top">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                         </svg>
-                                        <a href="#">Logout</a>
+                                        <a href="../backend/auth-sign-in.html">Logout</a>
                                     </li>
                                 </ul>
                             </li>
@@ -273,16 +276,14 @@
     <!-- body -->
     <div class="content-page">
         <div class="container-fluid">
-            <div class="row">
+          <div class="row">
             <div class="col-sm-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <div class="header-title">
-                                <h4 class="card-title">Projects</h4>
+                                <h4 class="card-title">Reports</h4>
                             </div>
-                            <div class="header-action">
-                                <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target=".bd-new_employee-modal-lg">New Project</button>
-                            </div>
+                          
                         </div>
                         
                         <div class="card-body">
@@ -293,302 +294,198 @@
                             <div class="table-responsive">
                                 <span class="table-add float-right mb-3 mr-2">
 
-                                    <div class="modal fade bd-new_employee-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title text-dark ">New Project</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Project Name">
-                                                            </div>
-                                                            <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Project Type">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >Start Date</label>
-                                                                <input type="date" class="form-control form-group">
-                                                            </div>
-                                                            <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >End Date</label>
-                                                                <input type="date" class="form-control form-group">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <input type="text" class="form-control form-group" placeholder="Company Name">
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-danger">Save</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                                
                                 </span>
 
 
-                                <table id="datatable-1" class="table data-table table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>S/n</th>
-                                            <th>Name </th>
-                                            <th>Type</th>
-                                            <th>Company</th>
-                                            <th>Start date</th>
-                                            <th>End date</th>
-                                            <th>Status</th>
-                                            <th class="text-right">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>CRM </td>
-                                            <td>Software</td>
-                                            <td>Zigmawave <br> Intern</td>
-                                            <td>2011/04/25</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <span class="badge bg-success">active</span>
-                                            </td>
-                                            <td class="btn-group">
-                                                
+                                
+<!-- charts -->
+<section class="section">
+      <div class="row">
 
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" >Employee Record Table</h5>
 
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </td>
-                                        </tr>
+              <!-- Line Chart -->
+              <table class="table table-striped">
+                <thead style="background-color:blue;color:white">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Start Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Brandon Jacob</td>
+                    <td>Designer</td>
+                    <td>28</td>
+                    <td>2016-05-25</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Bridie Kessler</td>
+                    <td>Developer</td>
+                    <td>35</td>
+                    <td>2014-12-05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ashleigh Langosh</td>
+                    <td>Finance</td>
+                    <td>45</td>
+                    <td>2011-08-12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Angus Grady</td>
+                    <td>HR</td>
+                    <td>34</td>
+                    <td>2012-06-11</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <!-- End Line Chart -->
 
-
-                                        <!-- EDIT MODAL -->
-                                        <div class="modal fade bd-edit_employee-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog modal-lg">
-                                                <div class="modal-content">
-                                                    <div class="modal-header"> 
-                                                        <h5 class="modal-title text-black">Edit Project</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Project Name">
-                                                                </div>
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Project Type">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >Start Date</label>
-                                                                    <input type="date" class="form-control form-group" placeholder="Start Date">
-                                                                </div>
-                                                                <div class="col">
-                                                                <label for="" style=" color:grey;font-size:15px;margin-left:20px" >End Date</label>
-                                                                    <input type="date" class="form-control form-group" placeholder="End Date">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <input type="text" class="form-control form-group" placeholder="Company Name">
-                                                                </div>
-                                                                
-                                                            </div>
-                                                            
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-danger">Save</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- DELETE MODAL -->
-
-                                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Delete Project</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Are you sure to delete this project?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Delete</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        
-
-                                        <tr>
-                                            <th>2</th>
-                                            <td>HRM</td>
-                                            <td>Software</td>
-                                            <td>Zigmawave</td>
-                                            <td>2011/07/25</td>
-                                            <td>2011/08/22</td>
-                                            <td>
-                                                <span class="badge bg-primary">completed</span>
-                                            </td>
-                                            <td class="btn-group">
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td>Safire</td>
-                                            <td>Landing Page</td>
-                                            <td>Zigmawave <br>Intern</td>
-                                            <td>2009/01/12</td>
-                                            <td>2023/01/23</td>
-                                            <td>
-                                                <span class="badge bg-info">on leave</span>
-                                            </td>
-                                            <td class="btn-group">
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td>Website</td>
-                                            <td>Safire</td>
-                                            <td>E-commerce Web</td>
-                                            <td>2012/03/29</td>
-                                            <td>2023/09/24</td>
-                                            <td>
-                                                <span class="badge bg-danger">completed</span>
-                                            </td>
-                                            <td class="btn-group">
-
-                                                <a href="#" data-toggle="modal" data-target=".bd-edit_employee-modal-lg" class="btn btn-info">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-
-                                                <a href="#" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">
-                                                    <i class="">
-                                                        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                       
-                                    </tbody>
-
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Page end  -->
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Wrapper End-->
-    <footer class="iq-footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 text-right">
-                    <span class="mr-1">
-                        Copyright
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>© <a href="#" class="">Zigmawave</a>
-                        All Rights Reserved.
-                    </span>
-                </div>
+
+        <div class="col-lg-6">
+          <div class="card ">
+            <div class="card-body ">
+              <h5 class="card-title">Project Report Chart</h5>
+
+             
+           <canvas id="myChart" style="width:100%;max-width:900px ;height:350px"></canvas>
+
             </div>
+          </div>
         </div>
-    </footer>
 
-    
-  <!-- Page end  -->
-</div>
-    </div>
-  </div>
-  <!-- Wrapper End-->
+        
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Leave Report</h5>
+              <h6 class="card-title">Summary of Leave for the year 2023</h6>
 
+              <!-- Pie Chart -->
+              <div id="pieChart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#pieChart"), {
+                    series: [50, 55, 13, 43, 22],
+                    chart: {
+                      height: 350,
+                      type: 'pie',
+                      toolbar: {
+                        show: true
+                      }
+                    },
+                    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E']
+                  }).render();
+                });
+              </script>
+              <!-- End Pie Chart -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" >Task Summary</h5>
+
+              <!-- Line Chart -->
+              <table class="table table-striped">
+                <thead style="background-color:blue;color:white">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Start Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Brandon Jacob</td>
+                    <td>Designer</td>
+                    <td>28</td>
+                    <td>2016-05-25</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Bridie Kessler</td>
+                    <td>Developer</td>
+                    <td>35</td>
+                    <td>2014-12-05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ashleigh Langosh</td>
+                    <td>Finance</td>
+                    <td>45</td>
+                    <td>2011-08-12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Angus Grady</td>
+                    <td>HR</td>
+                    <td>34</td>
+                    <td>2012-06-11</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <!-- End Line Chart -->
+
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
+
+
+
+        
+
+
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+var xValues = ["CRM", "Blog", "Website", "HMS", "Blog"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+</script>
 
 @endsection
-
-
-
