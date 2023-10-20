@@ -12,6 +12,10 @@ use App\Http\Controllers\AccountingController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\RoleManagerController;
+use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\EditCustomersController;
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\TaskController;
 
 
 
@@ -54,3 +58,8 @@ Route::get('/employee', [EmployeeController::class,'index'])->name('employee');
 Route::get('/project',[ProjectController::class,'index'])->name('project');
 Route::get('/role-manager',[RoleManagerController::class,'index'])->name('role-manager');
 
+Route::get('/customers',[CustomersController::class,'index'])->name('customers');
+
+Route::get('/edit-customer',[EditCustomersController::class,'index'])->name('edit_customers');
+Route::get('/activity',[ActivityController::class,'index'])->name('activity');
+Route::get('/task',[taskController::class,'index'])->name('task');
