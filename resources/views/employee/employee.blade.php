@@ -383,7 +383,7 @@
 
                             </div>
 
-                            <div class="table-responsive">
+                            
                                 <span class="table-add float-right mb-3 mr-2">
 
                                     <div class="modal fade bd-new_employee-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
@@ -464,7 +464,7 @@
 
                                 </span>
 
-
+                                <div class="table-responsive">
                                 <table id="datatable-1" class="table data-table table-striped table-bordered">
                                     <thead>
                                         <tr>
