@@ -131,6 +131,16 @@
                             </i><span class="ml-2">Leave</span>
                         </a>
                     </li>
+
+                    {{-- <li class=" sidebar-layout">
+                        <a href="{{route('inventory')}}" class="svg-icon">
+                            <i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                                  </svg>                                  
+                            </i><span class="ml-2">Inventory</span>
+                        </a>
+                    </li> --}}
             </nav>
             <div class="pt-5 pb-5"></div>
         </div>
@@ -313,7 +323,7 @@
                             <li class="nav-item nav-icon dropdown">
                                 <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     <img src="../assets/images/user/1.jpg" class="img-fluid avatar-rounded" alt="user">
-                                    <span class="mb-0 ml-2 user-name">John Doe</span>
+                                    <span class="mb-0 ml-2 user-name">{{ Auth::user()->name }}</span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                     <li class="dropdown-item d-flex svg-icon">
@@ -345,7 +355,7 @@
                                         <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                         </svg>
-                                        <a href="#">Logout</a>
+                                        <a href="{{route('logout')}}">Logout</a>
                                     </li>
                                 </ul>
                             </li>
